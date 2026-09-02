@@ -47,7 +47,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: "/tmp/image.tar"
-          target: "/tmp/image.tar"
+          target: "/tmp"
           strip_components: 1
 
       - name: Deploy to Aliyun server via SSH
